@@ -71,14 +71,27 @@ As paginas 12 a 56 do relatorio de treinamento contem os experimentos referentes
 - Paginas 42 a 51: metodo linear
 - Paginas 52 a 56: metodo proporcioinal
 
-A partir desses resultados, podemos ver que muitas combinacoes de metodo e parametros do curriculum learning superam o teacher forcing. Em especial, na pagina 41 do relatorio de treinamento, eh possivel observar que o metodo de curriculo que obteve melhor convergencia entre todos os testados foi o metodo exponencial, com erro de teste final de ~0.39. Para esse resultado, foram utilizados os seguintes parametros:
+O melhores resultados para o metodo linear foram obtidos com os seguintes parametros, nas paginas 46 e 47:
 
-- Initial TFR: 1
+- Curriculum method: Linear
+- Initial TFR: 0.5, 0.6
+
+O melhores resultados para o metodo proporcional foram obtidos com os seguintes parametros, nas paginas 54 e 56:
+
+- Curriculum method: proportional
+- Proportional factor: 0.6, 1.0 
+
+Tambem podemos observar que muitas combinacoes de metodo e parametros do curriculum learning superam o teacher forcing. Em especial, na pagina 41 do relatorio de treinamento, eh possivel observar que o metodo de curriculo que obteve melhor convergencia entre todos os testados foi o metodo exponencial, com erro de teste final de ~0.39. Para esse resultado, foram utilizados os seguintes parametros:
+
 - Curriculum method: exponential
+- Initial TFR: 1
 - Exponential factor: 0.1
 
 ![image](https://github.com/user-attachments/assets/4366b329-43fd-4b52-b91e-d4f61ce4b544)
 
-
 Com esses experimentos foi possivel observar o efeito do teacher forcing e do curriculum learning no treinamento de uma RNN. Foi observada uma melhoria na convergencia do modelo ao utilizar teacher forcing com relacao ao treinamento padrao, e uma melhoria maior ainda ao utilizar alguns metodos de curriculum learning.
+
+
+
+
 
