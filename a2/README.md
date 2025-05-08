@@ -9,7 +9,7 @@ Obs: para executar o arquivo, é necessário incluir os dados (santos_ssh.csv) n
 
 # Comentários sobre a solucao
 
-Nesse arquivo, foram implementados o Teacher Forcing e o Curriculum Learning.
+No arquivo `a2_curriculum.py`, foram implementados o Teacher Forcing e o Curriculum Learning.
 
 Para isso, os dados verdadeiros ("ground truth") foram passados para a RNN durante o treinamento, mais especificamente durante a etapa de decodificacao, e esses dados foram utilizados como entrada para algumas das etapas da RNN no lugar de utilizar a saida do ultimo estado oculto. Essa insercao dos dados verdadeiros faz com que o modelo tenha maior probabilidade de gerar um proximo estado oculto adequado.
 
