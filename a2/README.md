@@ -50,9 +50,18 @@ Apos a finalizacao de todas as 5 secoes, os arquivos com os resultados foram cop
 
 Para essa atividade, foram realizados experimentos utilizando 800 pontos "no passado" para tentar prever os proximos 400 pontos. O resultado do treinamento sem teacher forcing pode ser visto no relatorio de treinamento (arquivo training_report.pdf), na pagina 1. Nesse resultado, foi utilizado o metodo constant, com initial_tfr igual a 0, portanto, o TFR foi mantido em zero durante todo o treinamento. Devido ao numero alto de pontos no futuro em relacao ao numero de pontos no passado, podemos ver que o modelo sem teacher forcing teve bastante dificuldade em convergir, nao reduzindo o erro de teste para menos de ~0.55.
 
+![image](https://github.com/user-attachments/assets/fe010356-c1c6-430e-b7b4-980d5fcb6ddb)
+
+
 ## Teacher Forcing Model
 
 Nas paginas seguintes do relatorio de treinamento (paginas 2 a 11), estao apresentados os resultados para diferentes niveis de teacher forcing. Para isso, foi utilizado o metodo constant, e o valor de initial_tfr foi variado entre 0.1 e 1 em intervalos de 0.1. Podemos ver que para alguns valores de teacher forcing o resultado do treinamento supera o resultado sem teacher forcing algum. Especificamente, os erros finais de teste para initial_tfr igual 0.4, 0.6 e 0.7 chegaram proximos a 0.50. Podemos ver tambem que alguns valores de teacher forcing resultaram em treinamentos piores do que no caso sem teacher forcing, como foi o caso para teacher forcing de 0.2, por exemplo. Tambem podemos ver nesses resultados que o erro de treino cai drasticamente conforme o TFR aumenta, como esperado ja que estao sendo dadas parte das respostas durante o treino.
+
+![image](https://github.com/user-attachments/assets/cf7cf054-b246-4bb2-b069-ab153cf81246)
+
+
+![image](https://github.com/user-attachments/assets/21bdbe72-55f5-4683-a3a9-50809bbf0cdb)
+
 
 ## Curriculum Learning Model
 
@@ -67,6 +76,9 @@ A partir desses resultados, podemos ver que muitas combinacoes de metodo e param
 - Initial TFR: 1
 - Curriculum method: exponential
 - Exponential factor: 0.1
+
+![image](https://github.com/user-attachments/assets/4366b329-43fd-4b52-b91e-d4f61ce4b544)
+
 
 Com esses experimentos foi possivel observar o efeito do teacher forcing e do curriculum learning no treinamento de uma RNN. Foi observada uma melhoria na convergencia do modelo ao utilizar teacher forcing com relacao ao treinamento padrao, e uma melhoria maior ainda ao utilizar alguns metodos de curriculum learning.
 
