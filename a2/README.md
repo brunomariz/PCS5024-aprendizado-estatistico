@@ -76,10 +76,18 @@ O melhores resultados para o metodo linear foram obtidos com os seguintes parame
 - Curriculum method: Linear
 - Initial TFR: 0.5, 0.6
 
+![image](https://github.com/user-attachments/assets/1d0ed22d-9ad4-4d1c-8267-85154e17ed4a)
+
+
 O melhores resultados para o metodo proporcional foram obtidos com os seguintes parametros, nas paginas 54 e 56:
 
 - Curriculum method: proportional
-- Proportional factor: 0.6, 1.0 
+- Proportional factor: 0.6, 1.0
+
+![image](https://github.com/user-attachments/assets/3dd2ecdc-2094-4d94-9edb-200914183d9a)
+
+![image](https://github.com/user-attachments/assets/ba51b5e7-1ae5-4f62-9dd8-b20ee2d24f5c)
+
 
 Tambem podemos observar que muitas combinacoes de metodo e parametros do curriculum learning superam o teacher forcing. Em especial, na pagina 41 do relatorio de treinamento, eh possivel observar que o metodo de curriculo que obteve melhor convergencia entre todos os testados foi o metodo exponencial, com erro de teste final de ~0.39. Para esse resultado, foram utilizados os seguintes parametros:
 
