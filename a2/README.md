@@ -5,7 +5,7 @@ Atividade e discussão no arquivo a2_curriculum.py.
 Obs: para executar o arquivo, é necessário incluir os dados (santos_ssh.csv) no diretório.
 
 ---
-> Abaixo é possivel ler uma cópia da discussão do arquivo a2_curriculum.py. Essa cópia pode estar desatualizada. Para garantir a leitura da versão mais atual, por favor, leia no arquivo `a2_curriculum.py`.
+> Abaixo é possivel ler uma cópia da discussão do arquivo a2_curriculum.py. Essa cópia pode estar desatualizada. Para garantir a leitura da versão mais atual, por favor, leia no arquivo `a2_curriculum.py`. Caracteres de pontuação também foram evitados para evitar erros na codificação.
 
 # Comentários sobre a solucao
 
