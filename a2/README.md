@@ -7,7 +7,7 @@ Obs: para executar o arquivo, é necessário incluir os dados (santos_ssh.csv) n
 ---
 > Abaixo é possivel ler uma cópia da discussão do arquivo a2_curriculum.py. Essa cópia pode estar desatualizada. Para garantir a leitura da versão mais atual, por favor, leia no arquivo `a2_curriculum.py`. Caracteres de pontuação foram evitados para evitar erros na codificação.
 
-# Comentários sobre a solucao
+# Comentarios sobre a solucao
 
 No arquivo `a2_curriculum.py`, foram implementados o Teacher Forcing e o Curriculum Learning.
 
