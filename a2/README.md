@@ -1,5 +1,7 @@
 # PCS5024 - Aprendizado Estatístico - Statistical Learning - 2025/1
 
+Publicado em https://github.com/brunomariz/PCS5024-aprendizado-estatistico/edit/main/a2
+
 Atividade e discussão no arquivo a2_curriculum.py.
 
 Obs: para executar o arquivo, é necessário incluir os dados (santos_ssh.csv) no diretório.
