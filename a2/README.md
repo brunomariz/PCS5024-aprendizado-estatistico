@@ -41,7 +41,7 @@ Isso utilizará os valores padrão dos parâmetros. Foram definidos novos parame
 Para obter os resultados (arquivo training_report.pdf) os treinamentos foram executados em diversas máquinas com o uso do arquivo `run_experiments.sh`. Esse arquivo executa 1/5 dos experimentos, de acordo com o argumento passado para "section". Isso possibilita o uso de ate 5 máquinas para executar os experimentos em paralelo. Para executar os experimentos com `initial_tfr` igual a 0.1 e 0.2, por exemplo, foi utilizado o comando 
 
 ```
-./run_curriculum.sh 0 
+./run_experiments.sh 0 
 ```
 
 Após a finalização de todas as 5 seções, os arquivos com os resultados foram copiados para um único computador, onde foi executado o script `generate_report.py`, que leva o diretório onde estão os arquivos com os resultados como argumento. Isso produziu o arquivo `training_report.pdf`.
