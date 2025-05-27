@@ -92,6 +92,7 @@ from tqdm import tqdm
 import matplotlib.pyplot as plt
 import argparse
 import uniplot
+import os
 
 # --- Configuration ---
 DEFAULT_INITIAL_TFR = 0.8
@@ -615,6 +616,7 @@ def main(args):
 
     # --- Save Model ---
     save_dir = "results/latest"
+    os.makedirs(save_dir, exist_ok=True)
     file_identifier = f"{args.curriculum_method}-{args.initial_tfr}-{args.proportional_method_factor}-{args.exponential_method_factor}-{run_id}"
 
     model_save_path = pathlib.Path(
