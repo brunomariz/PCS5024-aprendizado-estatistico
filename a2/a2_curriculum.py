@@ -1,5 +1,5 @@
 """
-Comentarios sobre a solucao no final do arquivo.
+Comentarios sobre a solucao no final do arquivo e no arquivo README.md (mesmo texto com imagens).
 
 # PCS5024 - Aprendizado Estatístico - Statistical Learning - 2025/1
 ### Professors:
@@ -742,7 +742,7 @@ Nesse arquivo, foram implementados o Teacher Forcing e o Curriculum Learning.
 
 Para isso, os dados verdadeiros ("ground truth") foram passados para a RNN durante o treinamento, mais especificamente durante a etapa de decodificacao, e esses dados foram utilizados como entrada para algumas das etapas da RNN no lugar de utilizar a saida do ultimo estado oculto. Essa insercao dos dados verdadeiros faz com que o modelo tenha maior probabilidade de gerar um proximo estado oculto adequado.
 
-A quantidade de dados verdadeiros que e inserida na etapa de treinamento foi chamada de "teacher forcing rate" (TFR). O TFR define a porcentagem de dados verdadeiros utilizados no treinamento, ou seja, se TFR for igual a 0.2, serao utilizados dados verdadeiros em 20% das entradas da RNN. Para implementar o Curriculum Learning, as funcoes de treinamento foram modificadas para aceitar diferentes niveis de TFR, definida no loop principal de acordo com alguns metodos.
+A quantidade de dados verdadeiros que e inserida na etapa de treinamento foi chamada de "teacher forcing rate" (TFR). O TFR define a porcentagem de dados verdadeiros utilizados no treinamento, ou seja, se TFR for igual a 0.2, serao utilizados dados verdadeiros em 20% das entradas da RNN. Para implementar o Curriculum Learning, as funcoes de treinamento foram modificadas para aceitar diferentes niveis de TFR, definidas no loop principal de acordo com alguns metodos.
 
 Foram implementados os seguintes metodos de Curriculum Learning:
 
@@ -772,7 +772,7 @@ Para obter os resultados (arquivo training_report.pdf) os treinamentos foram exe
 ./run_curriculum.sh 0 
 ```
 
-Apos a finalizacao de todas as 5 secoes, os arquivos com os resultados foram copiados para um unico computador, onde foi executado o script generate_report.py, que leva o diretorio onde estao os arquivos com os resultados como argumento. Isso produziu o arquivo training_report.py.
+Apos a finalizacao de todas as 5 secoes, os arquivos com os resultados foram copiados para um unico computador, onde foi executado o script generate_report.py, que leva o diretorio onde estao os arquivos com os resultados como argumento. Isso produziu o arquivo training_report.pdf.
 
 
 ## Autoregressive Model
@@ -801,11 +801,11 @@ O melhores resultados para o metodo proporcional foram obtidos com os seguintes 
 - Curriculum method: proportional
 - Proportional factor: 0.6, 1.0 
 
-Tambem podemos observar que muitas combinacoes de metodo e parametros do curriculum learning superam o teacher forcing. Em especial, na pagina 41 do relatorio de treinamento, eh possivel observar que o metodo de curriculo que obteve melhor convergencia entre todos os testados foi o metodo exponencial, com erro de teste final de ~0.39. Para esse resultado, foram utilizados os seguintes parametros:
+Podemos observar que muitas combinacoes de metodo e parametros do curriculum learning superam o teacher forcing. Em especial, na pagina 41 do relatorio de treinamento, eh possivel observar que o metodo de curriculo que obteve melhor convergencia entre todos os testados foi o metodo exponencial, com erro de teste final de ~0.39. Para esse resultado, foram utilizados os seguintes parametros:
 
 - Curriculum method: exponential
 - Initial TFR: 1
 - Exponential factor: 0.1
 
-Com esses experimentos foi possivel observar o efeito do teacher forcing e do curriculum learning no treinamento de uma RNN. Foi observada uma melhoria na convergencia do modelo ao utilizar teacher forcing com relacao ao treinamento padrao, e uma melhoria maior ainda ao utilizar alguns metodos de curriculum learning.
+Com esses experimentos, foi possivel observar o efeito do teacher forcing e do curriculum learning no treinamento de uma RNN. Foi observada uma melhoria na convergencia do modelo ao utilizar teacher forcing com relacao ao treinamento padrao, e uma melhoria maior ainda ao utilizar alguns metodos de curriculum learning.
 """
